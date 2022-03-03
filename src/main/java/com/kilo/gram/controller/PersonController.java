@@ -28,7 +28,7 @@ public class PersonController {
         return new CustomNode(person.getName(),1, person);
     }
 
-
+    //  查询所拍摄的电影
     @GetMapping("/queryRelationship/{name}")
     public List<CustomNode> getActedByName(@PathVariable("name") String name){
         Person person = personService.findByName(name);
